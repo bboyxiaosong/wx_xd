@@ -1,6 +1,0 @@
-<!--scale.wxml-->
-<view class="container">
-  <view bindtouchmove="touchmoveCallback" bindtouchstart="touchstartCallback">
-    <image mode="aspectFill" src="http://pic29.photophoto.cn/20131204/0034034499213463_b.jpg" style="width: {{ touch.scaleWidth }}px;height: {{ touch.scaleHeight }}px" bindload="bindload"></image>
-  </view>
-</view>

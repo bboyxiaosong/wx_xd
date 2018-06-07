@@ -1,5 +1,0 @@
-<!--pages/test4/test4.wxml-->
-<view>
-<image style="width: {{imagewidth}}px; height: {{imageheight}}px;" src="{{imagefirstsrc}}" bindload="imageLoad"></image> 
-
-</view>

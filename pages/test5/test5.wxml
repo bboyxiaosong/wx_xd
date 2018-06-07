@@ -1,7 +1,0 @@
-<!--pages/test5/test5.wxml-->
-<view>
-<scroll-view scroll-y="true" scroll-x="true" class = "FilePath" bindtouchmove="scroll" bindtouchstart='scroll' bindtouchend='endTou'>
-    <image src='{{src}}' style="width: {{width}}px;height: {{height}}px;" bindload = "imgload" bindtouchmove="touch"></image>
-  </scroll-view>
-
-</view>

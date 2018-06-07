@@ -1,5 +1,0 @@
-/**scale.wxss**/
-.container image{
-  display: block;
-  width: 100%;
-}
