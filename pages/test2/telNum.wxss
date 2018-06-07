@@ -1,0 +1,50 @@
+.getCode{
+  position: relative;
+  width: 100%;
+  height: 60rpx;
+  overflow: hidden;
+}
+.getCode .code_ul{
+  width: 670rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  display: flex;
+}
+.code_ul .code_li{
+  width: 60rpx;
+  text-align: center;
+  border-bottom: 1rpx solid red;
+  margin-right: 40rpx;
+ 
+}
+.getCode .codeInput{
+  display: block;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+  /* background:rgba(0,0, 0, 0.2); */
+  opacity: 0;
+  width:200%;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+   text-indent: -999em; 
+  margin-left: -100%; 
+}
+.nextBt {
+  border: none;
+  outline: none;
+  background:none;
+  width: 100rpx;
+  height: 100rpx;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  margin-top:50rpx;
+}
+button[class="nextBt"]::after {
+  border: 0;
+}

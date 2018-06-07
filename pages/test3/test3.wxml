@@ -1,0 +1,29 @@
+<view class='Section'>
+
+
+
+</view>
+
+
+
+<view class='body_container' wx:if="{{flag == true}}"  catchtouchmove="preventD" catchtap='closeWindow'>
+  <view class="wrap" bindtouchstart="touchStart" bindtouchmove='touchMove' bindtouchend="touchEnd" >
+
+    <view class="nav-item {{testClass[index]}}" wx:for="{{testNav}}" data-id="{{testClass[index]}}" catchtap="ctrlClick" data-index="{{index}}" wx:key="names">
+      <image class='nav_item_img' src='{{item.img}}'></image>
+      <view class='nav_itemTitle'>{{item.title}}</view>
+      <view class='nav_itemword'>{{item.word}}</view>
+      <view class='nav_itembtTxt{{item.id}}'>{{item.btTxt}}</view>
+    </view>
+
+  </view>
+</view>
+
+
+
+<view>  
+<!-- <scroll-view  class='scrllX' scroll-y="true" scroll-x="true" style="overflow:scroll">  
+<image id = "SFimg" catchtouchend="endtap" catchtouchmove="movetap" bindload = "imgload"  
+ style="width:{{ scaleWidth }}px;height:{{ scaleHeight }}px" mode="aspectFit" src="{{dataimg}}"></image>  
+</scroll-view>   -->
+</view> 
