@@ -1,33 +1,14 @@
-.gerCodeNum{
-  
-}
-.mod-test{
-	text-align:center;
-	height:100rpx;
-}
-.header {
-	position:relative;
-	width:100vw;
-	height:57.87vw;
-	line-height:100rpx;
-	box-sizing:border-box;
-	font-size:28rpx;
-	color:#fff;
-}
-
-.header .thumb {
-	position:absolute;
-	left:50rpx;
-	top:50rpx;
-	width:150rpx;
-	height:150rpx;
-	border-radius:50%;
-	box-shadow:#FEC47B 0px 0px 5px 5px;
-}
-.header .nickname{
-   	position: absolute;
-    left: 230rpx;
-    line-height: 120px;
-    font-size: 12px;
-    color: #FEC47B;
-}
+.container {
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ padding: 200rpx 0;
+ box-sizing: border-box;
+} 
+.box{width:300px; position: relative}
+.main{width: 90%; height:50px; background: #eee; border: 1px solid #ccc; margin:2px auto; text-align: center; line-height: 50px;}
+.mainmove{position: absolute; opacity: 0.7}
+.maind{background: #fff; border:1px dashed #efefef;}
+.mainend{position: static; opacity: 1;}
