@@ -1,0 +1,57 @@
+/* pages/test2/test2.wxss */
+
+.identityContainer {
+  width: 100%;
+}
+
+.h1_identity {
+  font-family: PingFangSC-Medium;
+  font-size: 48rpx;
+  color: #4a4a4a;
+  padding:64rpx 0 117rpx 72rpx;
+}
+
+.indentity_ul .indent_li {
+  display: flex;
+  width: 670rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #ebebeb;
+  padding-bottom: 37rpx;
+  margin-bottom: 34rpx;
+}
+
+.indentity_ul .lf_icon {
+  padding-left: 42rpx;
+}
+
+.indentity_ul .lf_icon image {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.center_txt {
+  width: 426rpx;
+  padding-left: 26rpx;
+}
+
+.indentity_ul .ct_top {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #4a4a4a;
+  line-height: 50rpx;
+}
+
+.indentity_ul .ct_bottom {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #707070;
+  line-height: 33rpx;
+}
+
+.indentity_ul .rt_choice image {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin-top: 25rpx;
+}

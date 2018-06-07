@@ -1,0 +1,50 @@
+.noneHouse {
+  height: 100%;
+}
+
+.minNone {
+  width: 58.66%;
+  height: 432rpx;
+  margin: 0 auto;
+  margin-top: 142rpx;
+}
+
+.minNone .nullBoxicons {
+  display: block;
+  margin: 0 auto;
+  width: 172rpx;
+  height: 142rpx;
+  margin-bottom: 30rpx;
+}
+
+.minNone .warnOneTxt, .minNone .warnTwoTxt {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #9b9b9b;
+  text-align: center;
+  line-height: 48rpx;
+}
+
+.manysHouse {
+  font-size: 48rpx;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.minNone .haveHousefind, .minNone .wuFangfind {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+  height: 60rpx;
+  width: 200rpx;
+  margin: 0 auto;
+  margin-top: 25rpx;
+  margin-bottom: 0rpx;
+  font-family: PingFangSC-Regular;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 60rpx;
+  background-color: #f06e5e;
+}

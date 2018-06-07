@@ -1,0 +1,7 @@
+<view class="telNum_section">
+  <view class="title_tel">请输入您的手机号</view>
+  <view class="telNum_wrap">
+    <input type="number" placeholder="请输入手机号" focus="true" bindinput="getMobile" />
+  </view>
+  <button class="nextBt {{flag==true?'add_animation':''}}" catchtap="nextBtCtrl">→</button>
+</view>

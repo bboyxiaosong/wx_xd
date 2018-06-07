@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="tip">
+    在开发小程序中总结的一些经验。
+  </view>
+  <view class="list">
+    <button bindtap="toDetail" data-path="test/cityChoice">合租趣城市选择</button>
+    <button bindtap="toDetail" data-path="test/getCode">获取验证码</button>
+    <button bindtap="toDetail" data-path="test3/test3">view子元素缩放、移动</button>
+    <button bindtap="toDetail" data-path="test5/test5">view子元素缩放、移动</button>
+    <button bindtap="toDetail" data-path="test2/sureIdentity">空页面</button>
+    <button bindtap="toDetail" data-path="test2/telFirst">验证码改版V1.3.3</button>
+    <button bindtap="toDetail" data-path="test4/test4">图片自适应窗口</button>
+    <button bindtap="toDetail" data-path="view-scale/index">view子元素缩放、移动</button>
+    <button bindtap="toDetail" data-path="scroll-view-scale/index">scroll-view子元素缩放</button>
+    <button bindtap="toDetail" data-path="index/myIndex">轮播组件</button>
+    <button bindtap="toDetail" data-path="view-scale/imgScale">scroll-view子元素缩放</button>
+    <button bindtap="toDetail" data-path="others/others">组件套餐</button>
+    <button bindtap="toDetail" data-path="example/index">原生组件</button>
+  </view>
+</view>

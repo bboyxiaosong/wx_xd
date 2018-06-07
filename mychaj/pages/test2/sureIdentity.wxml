@@ -1,0 +1,70 @@
+<view class="identityContainer">
+  <view class='h1_identity'> 请选择你的身份</view>
+  <view class="indentity_ul">
+    <view class='indent_li' bindtap='sureRadioCtrl' data-index="1">
+      <view class='lf_icon'>
+        <image src='../../image/pub_sure_indentity1.png'></image>
+      </view>
+      <view class='center_txt'>
+        <view class='ct_top'>我是房东</view>
+        <view class='ct_bottom'>我业主，房子在我名下，有房本</view>
+      </view>
+      <view class='rt_choice'>
+        <image wx:if="{{sureRadio != 1}}" src='../../image/pub_no_sure_bt.png'></image>
+        <image wx:if="{{sureRadio == 1}}" src='../../image/pub_sure_bt.png'></image>
+      </view>
+    </view>
+    <view class='indent_li' bindtap='sureRadioCtrl' data-index="2">
+      <view class='lf_icon'>
+        <image src='../../image/pub_sure_indentity2.png'></image>
+      </view>
+      <view class='center_txt'>
+        <view class='ct_top'>我要转租</view>
+        <view class='ct_bottom'>房子我不再居住，我要转租出去</view>
+      </view>
+      <view class='rt_choice'>
+        <image wx:if="{{sureRadio != 2}}" src='../../image/pub_no_sure_bt.png'></image>
+        <image wx:if="{{sureRadio == 2}}" src='../../image/pub_sure_bt.png'></image>
+      </view>
+    </view>
+    <view class='indent_li' bindtap='sureRadioCtrl' data-index="3">
+      <view class='lf_icon'>
+        <image src='../../image/pub_sure_indentity3.png'></image>
+      </view>
+      <view class='center_txt'>
+        <view class='ct_top'>我要合租</view>
+        <view class='ct_bottom'>房子是我租的，要找人和我一起合租</view>
+      </view>
+      <view class='rt_choice'>
+        <image wx:if="{{sureRadio !=3}}" src='../../image/pub_no_sure_bt.png'></image>
+        <image wx:if="{{sureRadio == 3}}" src='../../image/pub_sure_bt.png'></image>
+      </view>
+    </view>
+    <view class='indent_li' bindtap='sureRadioCtrl' data-index="4">
+      <view class='lf_icon'>
+        <image src='../../image/pub_sure_indentity4.png'></image>
+      </view>
+      <view class='center_txt'>
+        <view class='ct_top'>我是中介</view>
+        <view class='ct_bottom'>我有很多套房源</view>
+      </view>
+      <view class='rt_choice'>
+        <image wx:if="{{sureRadio !=4}}" src='../../image/pub_no_sure_bt.png'></image>
+        <image wx:if="{{sureRadio == 4}}" src='../../image/pub_sure_bt.png'></image>
+      </view>
+    </view>
+    <view class='indent_li' bindtap='sureRadioCtrl' data-index="5">
+      <view class='lf_icon'>
+        <image src='../../image/pub_sure_indentity5.png'></image>
+      </view>
+      <view class='center_txt'>
+        <view class='ct_top'>我是公寓</view>
+        <view class='ct_bottom'>我是公寓管理员，我也有很多套房源</view>
+      </view>
+      <view class='rt_choice'>
+        <image wx:if="{{sureRadio !=5}}" src='../../image/pub_no_sure_bt.png'></image>
+        <image wx:if="{{sureRadio == 5}}" src='../../image/pub_sure_bt.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
