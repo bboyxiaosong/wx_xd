@@ -1,14 +1,63 @@
 .container {
- height: 100%;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-between;
- padding: 200rpx 0;
- box-sizing: border-box;
-} 
-.box{width:300px; position: relative}
-.main{width: 90%; height:50px; background: #eee; border: 1px solid #ccc; margin:2px auto; text-align: center; line-height: 50px;}
-.mainmove{position: absolute; opacity: 0.7}
-.maind{background: #fff; border:1px dashed #efefef;}
-.mainend{position: static; opacity: 1;}
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; *//* align-items: center; */
+  justify-content: space-between;
+  /* padding: 200rpx 0; *//* box-sizing: border-box; */
+}
+
+.box {
+  width: 500rpx;
+  position: relative;
+}
+
+.main {
+  width: 240rpx;
+  height: 50px;
+  background: #eee;
+  border: 1px solid #ccc;
+  margin: 2px auto;
+  text-align: center;
+  line-height: 50px;
+}
+
+.mainmove {
+  position: absolute;
+  opacity: 0.7;
+}
+
+.maind {
+  background: #fff;
+  border: 1px dashed #efefef;
+}
+
+.mainend {
+  position: static;
+  opacity: 1;
+}
+page {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+.touch-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.1px;
+}
+.msg {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #666666;
+}
+.img {
+  position: absolute;
+  width: 690rpx;
+  height: 300rpx;
+  transform-origin: center center;
+}
+

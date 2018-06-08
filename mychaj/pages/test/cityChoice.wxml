@@ -3,3 +3,19 @@
     <view disable-scroll="true" wx:for="{{content}}" bindtouchmove="move" bindtouchstart="movestart" bindtouchend="moveend" data-index="{{item.id}}" data-main="{{mainx}}" class="main {{mainx == item.id? 'mainmove':'mainend'}}" style="left:{{start.x}}px; top:{{start.y}}px">{{item.content}}</view>
   </view>
 </view>
+
+<movable-area style="height: 200px;width: 200px;background: red;">
+
+  
+  <movable-view direction="all" style="height: 50px; width: 50px; background: blue;">
+  </movable-view>
+
+  
+  <movable-view direction="all" style="height: 20px; width: 50px; background: yellow;">
+  </movable-view>
+
+</movable-area>
+
+
+
+

@@ -3,9 +3,7 @@ var x, y, x1, y1, x2, y2, index, currindex, n, yy;
 var arr1 = [{ content: 11, id: 1 }, { content: 22, id: 2 }, { content: 33, id: 3 }, { content: 44, id: 4 }, { content: 55, id: 5 }];
 
 Page({
-	data:{
 	
-	},
   //index.js
   //获取应用实例
   
