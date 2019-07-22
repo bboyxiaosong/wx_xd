@@ -1,5 +1,5 @@
 var UTIL = require('./util.js')
-
+var regeneratorRuntime = require("./runtime.js")
 var requestHandler = {
   url: '',
   params: {},

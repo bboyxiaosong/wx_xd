@@ -27,5 +27,9 @@
     <button bindtap="toDetail" data-path="view-scale/imgScale">scroll-view子元素缩放</button>
     <button bindtap="toDetail" data-path="others/others">组件套餐</button>
     <button bindtap="toDetail" data-path="example/index">原生组件</button>
+    <button bindtap="toDetail" data-path="test3/canvasImg/index">生成图片</button>
+    <button bindtap="toDetail" data-path="test3/canvasImg1/index">CANVAS图片1</button>
+    <button bindtap="toDetail" data-path="test3/canvasImg2/index">CANVAS图片2</button>
+    <button bindtap="toDetail" data-path="test3/eacharts/index">eacharts</button>
   </view>
 </view>

@@ -1,7 +1,11 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/test3/test3",
+    "pages/test3/canvasImg/index",
+    "pages/test3/canvasImg1/index",
+    "pages/test3/canvasImg2/index",
+    "pages/test3/eacharts/index",
     "pages/test5/test5",
     "pages/test4/test4",
     "pages/test/getCode",
@@ -17,7 +21,6 @@
     "pages/test2/telFirst",
     "pages/test2/cityNohouse",
     "pages/test/cityChoice",
-
     "pages/others/others",
     "pages/others/commodity_attr/commodity_attr",
     "pages/others/calendar/calendar",
@@ -66,44 +69,37 @@
     "pages/example/navbar/navbar",
     "pages/example/tabbar/tabbar",
     "pages/example/searchbar/searchbar"
-    
-    
-    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black",
-    "backgroundColor":"blue"
-    
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "blue"
   },
-  "tabBar":{
-    "backgroundColor":"#fff",
-    "selectedColor":"#F37C65",
-      "list" :[
-         {
-        "pagePath":"pages/index/index",
-        "text":"首页",
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "selectedColor": "#F37C65",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
         "iconPath": "image/first.png",
         "selectedIconPath": "image/firstEd.png"
-        },
-        {
-        "pagePath":"pages/fabu/fabu",
-        "text":"发布",
+      },
+      {
+        "pagePath": "pages/fabu/fabu",
+        "text": "发布",
         "iconPath": "image/fabu.png",
         "selectedIconPath": "image/fabu.png"
-        
-       },
-       {
-        "pagePath":"pages/test/test",
-        "text":"我的",
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "我的",
         "iconPath": "image/myself.png",
         "selectedIconPath": "image/mySelfed.png"
-       }
-
-      ]
-
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,
@@ -111,6 +107,6 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug":false
-
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }

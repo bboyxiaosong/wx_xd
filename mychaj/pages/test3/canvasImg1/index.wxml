@@ -1,0 +1,7 @@
+
+
+<!--pages/test3/canvasImg1/index.wxml  canvas-id  position: absolute; left: -99999rpx;top: -99999rpx {{canvasHeight}} {{canvasWidth}}-->
+<button bindtap="createIamge">生成图片</button>
+<!-- <canvas canvas-id='canvas'  style="width:750px; height:1835px;"></canvas> -->
+<canvas canvas-id='canvas'  style="width:{{canvasHeight}}; height:{{canvasWidth}}"></canvas>
+
