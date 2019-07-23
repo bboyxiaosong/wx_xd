@@ -17,7 +17,7 @@ Page({
   onLoad: function (options) {
 
     var self = this;
-    self.initEacharts();
+    //self.initEacharts();
 
 
     let promise1 = new Promise(function (resolve, reject) {
@@ -29,50 +29,39 @@ Page({
         }
       })
     });
-    
+    let promise2 = new Promise(function (resolve, reject) {
+      wx.getImageInfo({
+        src: '../../../image/qrbg.png',
+        success: function (res) {
+          console.log(res)
+          resolve(res);
+        }
+      })
+    });
 
 
     Promise.all([
-      promise1
+      promise1, promise2
     ]).then(res => {
       console.log(res)
       const ctx = wx.createCanvasContext('shareImg')
-      ctx.setFillStyle('#fff')
-      ctx.fillRect(0, 0, 545, 771)
+      // ctx.setFillStyle('#fff')
+      // ctx.fillRect(0, 0, 545, 3001)//
+      //主要就是计算好各个图文的位置
+      ctx.drawImage('../../../' + res[0].path, 158, 190, 210, 210)
 
-      ctx.setFillStyle('#000')
+      ctx.drawImage('../../../' + res[1].path, 0, 0, 545, 771)
+
+      // 
+
+      // 
+
       ctx.setTextAlign('center')
-      ctx.setFontSize(24)
-      ctx.fillText('@用户昵称 的婚礼预算是：**** 元', 545/2,60)
-      // ctx.drawImage('../../../' + res[0].path, 158, 320, 210, 210)
-
-      self.cicleCtrl(ctx)
-
-      ctx.setFillStyle('#ee7664')
-      ctx.fillRect(80, 300, 20, 20)
-      ctx.setFontSize(20)
-      ctx.fillText('预算'+20, 140, 317)
-
-
-      ctx.setFillStyle('#ee935e')
-      ctx.fillRect(220, 300, 20, 20)
-      ctx.setFontSize(20)
-      ctx.fillText('预算' + 30, 280, 317)
-
-      ctx.setFillStyle('#f3b86a')
-      ctx.fillRect(360, 300, 20, 20)
-      ctx.setFontSize(20)
-      ctx.fillText('预算' + 40, 420, 317)
-
-
-
       ctx.setFillStyle('#000')
-      ctx.setFontSize(28)
-      ctx.setTextAlign('center')
-      ctx.fillText('评价的话：***************************', 545 / 2, 700)
+      ctx.setFontSize(22)
+      ctx.fillText('分享文字描述1', 545 / 2, 130)
+      ctx.fillText('分享文字描述2', 545 / 2, 160)
 
-      
-      //
       ctx.stroke()
       ctx.draw()
     })
@@ -184,66 +173,60 @@ Page({
       type: 'pie',
       series: [
         {
-          name: '预算1',
+          name: '成交量1',
           data: 15,
-          color: '#ee7664',
+          color: '#ff7f02',
         }, {
-          name: '预算2',
+          name: '成交量2',
           data: 35,
-          color: '#ee935e',
         }, {
-          name: '预算3',
+          name: '成交量3',
           data: 78,
-          color: '#f3b86a',
         }],
       width: windowWidth,
       height: 300,
       dataLabel: true,
       drawWhiteLine: true,
       whiteLineCount: 1,
-      legend: true,
+      legend: false,
       dataLabel: true
     });
   },
-  cicleCtrl(context) {
-
-    var array = [15, 35, 78];
-    var colors = ["#ee7664", "#ee935e", "#f3b86a"];
-    var total = 0;
-    for (var val = 0; val < array.length; val++) {
-      total += array[val];
-    }
-    var point = { x:260, y: 180 };
-    var radius = 100;
-    for (var i = 0; i < array.length; i++) {
-      context.beginPath();
-      var start = 0;
-      if (i > 0) {
-        for (var j = 0; j < i; j++) {
+  cicleCtrl() {
+    const ctx = wx.createCanvasContext('shareImg')
+    var array = [20, 30, 40];
+    var colors = ["#ff0000", "#ffff00", "#0000ff"];
+    var total = 0;// 计算问题   
+    for (var index = 0; index < array.length; index++) {
+      total += array[index];
+    }//    定义圆心坐标
+    var point = { x: 100, y: 100 };//    定义半径大小
+    var radius = 60;/*    循环遍历所有的pie */
+    for (let i = 0; i < array.length; i++) {
+      ctx.beginPath();//        起点弧度
+      var start = 0; if (i > 0) {
+        //计算开始弧度是前几项的总和，即从之前的基础的上继续作画
+        for (let j = 0; j < i; j++) {
           start += array[j] / total * 2 * Math.PI;
         }
       }
-      context.arc(point.x, point.y, radius, start, start + array[i] / total * 2 * Math.PI, false);
+      console.log("i:" + i);
+      console.log("start:" + start);
+      //1.先做第一个pie
+      //2.画一条弧，并填充成三角饼pie，前2个参数确定圆心，
+      //第3参数为半径，第
+      //4参数起始旋转弧度数，
+      //第5参数本次扫过的弧度数
+      //第6个参数为时针方向-false为顺时针
+      ctx.arc(point.x, point.y, radius, start, array[i] / total * 2 * Math.PI, false);
 
-      
+      //      3.连线回圆心
+      ctx.lineTo(point.x, point.y);//      4.填充样式
+      ctx.setFillStyle(colors[i]);//      5.填充动作
+      ctx.fill();
+      ctx.closePath();
 
-
-      context.setLineWidth(2)
-      context.lineTo(point.x, point.y);
-      context.setStrokeStyle('#F5F5F5');
-      context.setFillStyle(colors[i]);
-      context.fill();
-      context.closePath();
-      context.stroke();
     }
-    // context.strokeStyle = '#999';
-    // context.beginPath();
-    // context.moveTo(50, 100);
-    // context.lineTo(200,100);
-    // context.moveTo(200, 100);
-    // context.lineTo(210, 110);
-    // context.stroke();
   }
-
 
 })

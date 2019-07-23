@@ -30,6 +30,7 @@
     <button bindtap="toDetail" data-path="test3/canvasImg/index">生成图片</button>
     <button bindtap="toDetail" data-path="test3/canvasImg1/index">CANVAS图片1</button>
     <button bindtap="toDetail" data-path="test3/canvasImg2/index">CANVAS图片2</button>
+     <button bindtap="toDetail" data-path="test3/canvasImg3/index">CANVAS图片3</button>
     <button bindtap="toDetail" data-path="test3/eacharts/index">eacharts</button>
   </view>
 </view>

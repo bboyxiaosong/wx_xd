@@ -39,10 +39,10 @@
   z-index: 2;
 }
 .preview image{
-  width: 80%;
+  width: 70%;
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 15%;
   z-index: 3;
   border: 1px dashed #fff;
 }

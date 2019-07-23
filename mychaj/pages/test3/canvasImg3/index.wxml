@@ -2,9 +2,6 @@
 
 <!-- 画布大小按需定制 这里我按照背景图的尺寸定的  -->
 <canvas canvas-id="shareImg" class="shareImg" style="width:545px;height:1001px;position:absolute;top:-999999px;left:-999999px"></canvas>
-<view class="container_wrap" hidden='{{!hidden}}'>
-    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
-</view>
 
 <!-- 预览区域  -->
 <view hidden='{{hidden}}' class='preview'>
