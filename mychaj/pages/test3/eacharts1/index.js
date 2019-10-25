@@ -1,30 +1,27 @@
-var chart = require('../../../utils/f2.js');
+// var chart = require('../../../utils/f2.js');
 
+import F2 from '@antv/wx-f2'
+let chart = null;
 
-// let chart = null;
-
-function initChart(canvas, width, height, F2) {
-  var data = [{
-    name: '其他消费',
-    y: 6371664,
+function initChart(canvas, width, height, F2,data) {
+  var data = [
+    {
+    name: '消费1',
+    y: 80,
     const: 'const'
-  }, {
-    name: '生活用品',
-    y: 7216301,
+    },
+   {
+    name: '消费2',
+    y: 70,
     const: 'const'
-  }, {
-    name: '通讯物流',
-    y: 1500621,
-    const: 'const'
-  }, {
-    name: '交通出行',
-    y: 586622,
-    const: 'const'
-  }, {
-    name: '饮食',
-    y: 900000,
-    const: 'const'
-  }];
+    },
+    {
+      name: '消费3',
+      y: 30,
+      const: 'const'
+    }
+  
+  ];
   chart = new F2.Chart({
     el: canvas,
     width,
@@ -66,20 +63,13 @@ function initChart(canvas, width, height, F2) {
   chart.tooltip(false);
   // 
 
-  chart.interval().position('const*y').color('name', ['#1890FF', '#13C2C2', '#2FC25B', '#FACC14', '#F04864']).adjust('stack');
+  chart.interval().position('const*y').color('name', [ '#2FC25B', '#FACC14', '#F04864']).adjust('stack');
   chart.render();
   return chart;
 }
 
 Page({
-  onShareAppMessage: function (res) {
-    return {
-      title: 'F2 微信小程序图表组件，你值得拥有~',
-      path: '/pages/index/index',
-      success: function () { },
-      fail: function () { }
-    }
-  },
+  
   data: {
     opts: {
       onInit: initChart
@@ -87,5 +77,8 @@ Page({
   },
 
   onReady() {
+  },
+  onShow(){
+    // console.log(F2)
   }
 });

@@ -16,6 +16,7 @@
   <view class="list">
     <button bindtap="toDetail" data-path="test/cityChoice">合租趣城市选择</button>
     <button bindtap="toDetail" data-path="test/getCode">获取验证码</button>
+    <button bindtap="toDetail" data-path="test3/scroll">锚点</button>
     <button bindtap="toDetail" data-path="test3/test3">view子元素缩放、移动</button>
     <button bindtap="toDetail" data-path="test5/test5">view子元素缩放、移动</button>
     <button bindtap="toDetail" data-path="test2/sureIdentity">空页面</button>
@@ -24,6 +25,7 @@
     <button bindtap="toDetail" data-path="view-scale/index">view子元素缩放、移动</button>
     <button bindtap="toDetail" data-path="scroll-view-scale/index">scroll-view子元素缩放</button>
     <button bindtap="toDetail" data-path="index/myIndex">轮播组件</button>
+    <button bindtap="toDetail" data-path="index/swiper">轮播组件1</button>
     <button bindtap="toDetail" data-path="view-scale/imgScale">scroll-view子元素缩放</button>
     <button bindtap="toDetail" data-path="others/others">组件套餐</button>
     <button bindtap="toDetail" data-path="example/index">原生组件</button>

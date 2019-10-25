@@ -1,0 +1,76 @@
+
+<view class="tab-wrap hotel-header">
+  <view class="header-menu">
+    <view class="tab {{status==0?'tab-checked':''}}" catchtap="clickTab" data-id="0">
+      人员
+      <!-- <view class="line" wx:if="{{status==0}}"></view> -->
+    </view>
+    <view class="tab {{status==1?'tab-checked':''}}" catchtap="clickTab" data-id="1">
+      设备
+      <!-- <view class="line" wx:if="{{status==1}}"></view> -->
+    </view>
+    <view class="tab {{status==2?'tab-checked':''}}" catchtap="clickTab" data-id="2">
+      硬件
+      <!-- <view class="line" wx:if="{{status==2}}"></view> -->
+    </view>
+    <view class="tab {{status==3?'tab-checked':''}}" catchtap="clickTab" data-id="3">
+      道具
+      <!-- <view class="line" wx:if="{{status==3}}"></view> -->
+    </view>
+    <view class="line" style="margin-left:{{targeLeft}}rpx"></view>
+  </view>
+</view>
+<!-- style="height:{{winHeight}}rpx" -->
+<view class="hotel-tab">
+  <swiper 
+  indicator-dots="{{indicatorDots}}" 
+  current="{{currentTab}}" 
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}"
+  bindchange="swiperChange"
+  style="height:{{winHeight}}rpx"
+  >
+    <block>
+      <swiper-item>
+        <view class="box">
+          <view class="tit" style="margin-bottom:5rpx;">礼合</view>
+          <view class="tit">保礼合礼合礼合礼合礼合</view>
+          <view class="p1">礼合礼合礼合礼合：</view>
+        </view>
+        <view class="box">
+          <view class="tit" style="margin-bottom:5rpx;">礼合</view>
+          <view class="tit">保礼合礼合礼合礼合礼合</view>
+          <view class="p1">礼合礼合礼合礼合：</view>
+        </view>
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+        <view class="box">
+          <view class="tit" style="margin-bottom:5rpx;">礼合</view>
+          <view class="tit">保礼合礼合礼合礼合礼合</view>
+          <view class="p1">礼合礼合礼合礼合：</view>
+        </view>
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+      <view class="box">
+          <view class="tit" style="margin-bottom:5rpx;">礼合</view>
+          <view class="tit">保礼合礼合礼合礼合礼合</view>
+          <view class="p1">礼合礼合礼合礼合：</view>
+        </view>
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+        <view class="box">
+          <view class="tit" style="margin-bottom:5rpx;">礼合</view>
+          <view class="tit">保礼合礼合礼合礼合礼合</view>
+          <view class="p1">礼合礼合礼合礼合：</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

@@ -15,7 +15,8 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.1",
@@ -41,7 +42,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -68,6 +69,27 @@
 					"id": -1,
 					"name": "pages/test3/canvasImg2/index",
 					"pathName": "pages/test3/canvasImg2/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test3/eacharts1/index",
+					"pathName": "pages/test3/eacharts1/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/myIndex",
+					"pathName": "pages/index/myIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/swiper",
+					"pathName": "pages/index/swiper",
 					"scene": null
 				}
 			]

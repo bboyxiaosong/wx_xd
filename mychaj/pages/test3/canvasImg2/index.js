@@ -200,7 +200,7 @@ Page({
       height: 300,
       dataLabel: true,
       drawWhiteLine: true,
-      whiteLineCount: 1,
+      whiteLineCount: 0,
       legend: true,
       dataLabel: true
     });
@@ -228,7 +228,7 @@ Page({
       
 
 
-      context.setLineWidth(2)
+      context.setLineWidth(0)
       context.lineTo(point.x, point.y);
       context.setStrokeStyle('#F5F5F5');
       context.setFillStyle(colors[i]);

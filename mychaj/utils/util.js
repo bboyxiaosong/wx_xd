@@ -144,6 +144,7 @@ function checkAuth(app, callbak) {
           wx.showModal({
             title: '警告',
             content: '您已经拒绝微信授权，请勾选开启用户信息，以进行其他操作。',
+            // showCancel: false,
             success: function (res) {
               if (res.confirm) {
                 wx.openSetting({

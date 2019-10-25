@@ -1,1 +1,8 @@
-/* pages/test3/eacharts1/index.wxss */
+.container {
+  width: 750rpx;
+  height: 500rpx;
+} 
+ff-canvas {
+  width: 100%;
+  height: 100%;
+}

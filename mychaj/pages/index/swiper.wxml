@@ -1,0 +1,20 @@
+<view class="container">
+  <swiper
+    circular
+    previous-margin="90rpx" 
+    next-margin="90rpx"
+    current="{{current}}"
+    bindchange="bindChange"
+    style="margin-top: {{is6 ? '80rpx' : '40rpx'}}"
+  >
+    <block wx:for="{{data}}" wx:key="{{id}}">
+      <swiper-item class="{{index === current ? 'active' : '' }}">
+        <view>
+          <!-- <image class="tmp" src="{{item.picSrc}}" mode="aspectFit" /> -->
+          <video controls="false" poster="{{item.picSrc}}" src="{{item.videoSrc}}" loop="true" ></video>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+</view>

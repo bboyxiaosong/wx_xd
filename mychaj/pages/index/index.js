@@ -1,3 +1,5 @@
+var UTIL = require('../../utils/util.js')
+
 //index.js
 //获取应用实例
 const app = getApp()
@@ -23,6 +25,8 @@ Page({
     })
   },
   onLoad: function () {
+    UTIL.checkAuth(app)
+    app.globalData.isClicked = false
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
